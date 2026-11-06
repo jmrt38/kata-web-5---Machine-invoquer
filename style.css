@@ -24,7 +24,7 @@ h1 {
 }
 
 .form-style {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -48,7 +48,7 @@ h1 {
     gap: 10px;
 }
 
-.input {
+.select, .input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -57,6 +57,14 @@ h1 {
 
 label {
     font-weight: bold;
+}
+
+.boutons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding-top: 10px;
 }
 
 button {
@@ -95,6 +103,13 @@ button:hover {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #007BFF;
+}
+
+#creature-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 #creature-message {

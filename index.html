@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
     <title>Machine à invocation</title>
   </head>
   <body>
-    <form class="form-style" action="#" method="post">
+    <form class="form-style" id="formulaire" action="#" method="post">
       <h1>Machine à invocation</h1>
       <div class="input-style">
         <label for="prenom">Prénom:</label>
@@ -20,21 +20,21 @@
       </div>
       <div class="input-style">
         <label for="creature">créature à invoquer:</label>
-        <input
-          class="input"
-          type="text"
-          id="creature"
-          name="creature"
-          required
-        />
+        <select class="select" id="creature" name="creature">
+          <option value="">Sélectionnez une créature</option>
+        </select>
       </div>
-      <button type="submit">Invoquer</button>
+      <div class="boutons">
+        <button id="btn-invoquer" type="submit">Invocation</button>
+        <button id="btn-invoc-al" type="submit">Invocation aléatoire</button>
+      </div>
     </form>
-    <section class="conteneur-invocation">
-      <h2>Créature invoquée :</h2>
-      <h3 id="creature-name"></h3>
-      <span id="creature"></span>
-      <p id="creature-message"></p>
+    <section class="conteneur-invocation cache" id="invocation-section">
+      <h2 id="creature-name"></h2>
+      <img id="creature-image" src="" alt="Image de la créature" />
+      <p id="creature-description"></p>
+      <p id="creature-msg"></p>
+      <button id="btn-retour" type="button">Retour</button>
     </section>
   </body>
 </html>
