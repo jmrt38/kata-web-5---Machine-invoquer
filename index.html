@@ -9,21 +9,32 @@
   </head>
   <body>
     <form class="form-style" action="#" method="post">
+      <h1>Machine à invocation</h1>
       <div class="input-style">
         <label for="prenom">Prénom:</label>
-        <input type="text" id="prenom" name="prenom" required />
-        <button type="submit">Envoyer</button>
+        <input class="input" type="text" id="prenom" name="prenom" required />
       </div>
       <div class="input-style">
         <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" required />
-        <button type="submit">Envoyer</button>
+        <input class="input" type="text" id="nom" name="nom" required />
       </div>
       <div class="input-style">
         <label for="creature">créature à invoquer:</label>
-        <input type="text" id="creature" name="creature" required />
-        <button type="submit">Envoyer</button>
+        <input
+          class="input"
+          type="text"
+          id="creature"
+          name="creature"
+          required
+        />
       </div>
+      <button type="submit">Invoquer</button>
     </form>
+    <section class="conteneur-invocation">
+      <h2>Créature invoquée :</h2>
+      <h3 id="creature-name"></h3>
+      <span id="creature"></span>
+      <p id="creature-message"></p>
+    </section>
   </body>
 </html>
